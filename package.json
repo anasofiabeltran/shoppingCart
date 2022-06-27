@@ -1,0 +1,11 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "practicar javaScript",
+  "main": "js/index.js",
+  "scripts": {
+    "shoppingCart": "node js/index.js"
+  },
+  "author": "Ana Sofia Beltran",
+  "license": "ISC"
+}
