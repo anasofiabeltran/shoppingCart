@@ -8,3 +8,5 @@
 <a href="https://www.freepik.es/fotos/descargar-musica">Foto de descargar musica creado por pvproductions - www.freepik.es</a>
 <a href="https://www.flaticon.es/iconos-gratis/usuario" title="usuario iconos">Usuario iconos creados por Freepik - Flaticon</a>
 <a href="https://www.flaticon.es/iconos-gratis/correo-electronico" title="correo electrónico iconos">Correo electrónico iconos creados por DinosoftLabs - Flaticon</a>
+<a href='https://www.freepik.es/fotos/telefono'>Foto de telefono creado por rawpixel.com - www.freepik.es</a>
+<a href='https://www.freepik.es/fotos/auriculares'>Foto de auriculares creado por rawpixel.com - www.freepik.es</a>

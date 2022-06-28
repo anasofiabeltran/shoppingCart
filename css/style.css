@@ -110,17 +110,24 @@ header img{
     display: flex;
     gap: 2.4%;
     flex-wrap: wrap;
-    opacity: 0;
 }
 .section-products_content .card {
     width: 18.68rem!important;
     margin-bottom: 4%;
 }
 
-.section-products_content section:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+.card-body div{
+    display: grid;
+    grid-template-columns: 12% 48% 12%;
+    margin-left: calc(50% - 45px);
+
 }
 
+/*
+.section-products_content section:target {
+    opacity: 1; Mostramos el <li> del enlace que pulsemos
+}
+*/
 
 .categories div {
     display: flex;
@@ -148,8 +155,8 @@ header img{
 }
 
 .section-products_content #section2{
-    position: absolute;
-    top: 38px;
+    /*position: absolute;
+    top: 38px;*/
 }
 
 

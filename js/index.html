@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
 <header class="header">
     <div class="header-firstPart header_color">
         <img class="logo" src="../assets/img/cart_6.jpg" alt="logo">
@@ -24,7 +25,7 @@
             <div>
                 <img src="../assets/icons/shopping-cart.png" alt="shopping cart">
                 <p>cart</p>
-                <p>0</p>
+                <p id="total"></p>
             </div>
         </section>
     </div>
@@ -329,7 +330,35 @@
                         <div class="card-body">
                             <h5 class="card-title">chair</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img/smartphone-with-blank-black-screen-innovative-future-technology.jpg" class="card-img-top" alt="chair">
+                        <div class="card-body">
+                            <h5 class="card-title">Cellphone</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                                <button onclick="add('phone')">+</button>
+                                <input  type="text" id="quantity_of_products_phone" value="..."  disabled/>
+                                <button onclick="less('phone')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img/pink-headphones-wireless-digital-device.jpg" class="card-img-top" alt="chair">
+                        <div class="card-body">
+                            <h5 class="card-title">chair</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                                <button onclick="add('headphones')">+</button>
+                                <input  type="text" id="quantity_of_products_headphones" value="..."  disabled/>
+                                <button onclick="less('headphones')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -337,7 +366,11 @@
                         <div class="card-body">
                             <h5 class="card-title">chair</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -345,7 +378,11 @@
                         <div class="card-body">
                             <h5 class="card-title">chair</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -353,7 +390,11 @@
                         <div class="card-body">
                             <h5 class="card-title">chair</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -361,7 +402,11 @@
                         <div class="card-body">
                             <h5 class="card-title">chair</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -369,23 +414,11 @@
                         <div class="card-body">
                             <h5 class="card-title">chair</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/furniture-modern-studio-lifestyle-green.jpg" class="card-img-top" alt="chair">
-                        <div class="card-body">
-                            <h5 class="card-title">chair</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/furniture-modern-studio-lifestyle-green.jpg" class="card-img-top" alt="chair">
-                        <div class="card-body">
-                            <h5 class="card-title">chair</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -396,7 +429,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -404,7 +441,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -412,7 +453,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -420,7 +465,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -428,7 +477,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -436,7 +489,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -444,7 +501,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -452,7 +513,11 @@
                         <div class="card-body">
                             <h5 class="card-title">headphones</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <button onclick="add('chair')">+</button>
+                                <input  type="text" id="quantity_of_products_chair" value="..."  disabled/>
+                                <button onclick="less('chair')">-</button>
+                            </div>
                         </div>
                     </div>
                 </section>
