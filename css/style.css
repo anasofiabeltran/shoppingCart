@@ -39,10 +39,12 @@ header img{
     height: 2rem;
 }
 
+
 .header-firstPart{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 
 .header-firstPart section{
     display: flex;
@@ -51,12 +53,15 @@ header img{
     margin-right: 3%;
 }
 
-.header-firstPart div{
+.header-firstPart .cartButton,
+.header-firstPart section div:first-child,
+.header-firstPart .cartButton div:first-child{
     display: flex;
     gap: 4%;
     white-space: nowrap;
     align-items: center;
 }
+
 
 .header-secondPart{
     margin: 2%;
@@ -255,4 +260,9 @@ header img{
 .newsletter img{
     width: 35%;
     height: 6rem;
+}
+
+.upload_products{
+    display: flex;
+    gap: 2%;
 }

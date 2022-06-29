@@ -4,6 +4,12 @@ let products = {
     headphones:0,
 }
 
+let productInfomation = {
+    chair: ["../assets/img/furniture-modern-studio-lifestyle-green.jpg"],
+    phone: ["../assets/img/smartphone-with-blank-black-screen-innovative-future-technology.jpg"],
+    headphones: ["../assets/img/pink-headphones-wireless-digital-device.jpg"],
+}
+
 function listOfProducts(){
     let p=Object.values(products);
     let add=(a,b) => a+b;
@@ -36,9 +42,26 @@ function less(product){
     listOfProducts();
 }
 
+function uploadProducts(){
+    let p = document.getElementById('modal-body');
+    p.innerHTML = '';
+    Object.entries(products).forEach(
+        ([key,value]) => {
+            if (value != 0) {
+                p.innerHTML += `
+                <div class="upload_products">
+                <h6>${key}</h6>
+                <p> cantidad: ${value} </p>
+                <img src=${productInfomation[`${key}`]}>
+                </div>
+            `
+            }
+        }
+    )
+    
+}
 
 
-
-
+uploadProducts();
 listOfProducts();
 start();

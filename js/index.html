@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
 <header class="header">
+    
     <div class="header-firstPart header_color">
         <img class="logo" src="../assets/img/cart_6.jpg" alt="logo">
         <section>
@@ -22,10 +22,33 @@
                 <img src="../assets/icons/whatsapp.png" alt="whatsapp">
                 <p>3384719384 / 382948293</p>
             </div>
-            <div>
-                <img src="../assets/icons/shopping-cart.png" alt="shopping cart">
-                <p>cart</p>
-                <p id="total"></p>
+            <div class="cartButton">
+                <div>
+                    <button onclick="uploadProducts()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCart">
+                        <img src="../assets/icons/shopping-cart.png" alt="shopping cart">
+                        <p>cart</p>
+                    </button>
+                    <p id="total"></p>
+                    <div class="modal fade" id="modalCart" tabindex="-1"  aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="modal-body">
+ 
+                                
+
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
