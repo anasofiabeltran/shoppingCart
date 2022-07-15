@@ -203,7 +203,7 @@ header img{
     display: grid;
     grid-template-rows: 1fr auto auto;
     margin-top: 4%;
-    width: 102%;
+    width: 100%;
 }
 
 .publicity div:nth-child(1){

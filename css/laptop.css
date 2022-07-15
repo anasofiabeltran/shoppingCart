@@ -1,0 +1,41 @@
+.logo{
+    height: 10vw;
+}
+
+.categories .categories-imagenes {
+    height: 10vw;
+}
+
+
+.publicity .publicity-image{
+    height: 20vw;
+}
+
+.mainFrame img{
+    height: 100%;
+}
+
+.arrival img{
+    height: 7vw;
+}
+
+.categories div button{
+    width: 7vw;
+}
+
+.card{
+    width: 10vw !important; 
+}
+
+
+.publicity div:nth-child(2){
+    width: 10vw;
+}
+
+.publicity div button{
+    width: 7vw;
+}
+
+.publicity div:nth-child(3){
+    width: 84%;
+}

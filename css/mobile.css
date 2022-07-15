@@ -1,0 +1,105 @@
+.logo{
+    height: 10vw;
+}
+
+.header{
+    height: 60vw;
+}
+
+.header-firstPart section{
+    flex-direction: column;
+}
+
+.cartButton{
+    margin-left: 64%;
+}
+
+.header-secondPart{
+    grid-template-columns: 1fr;
+    gap: 12%;
+}
+
+.header-secondPart button,
+.header-secondPart .my_account{
+    place-self: center;
+}
+
+.mainFrame{
+    grid-template-columns: 1fr;
+    height: 32rem;
+}
+
+.lateral_space{
+    width: 0rem;
+}
+
+.principal_user_view{
+    grid-template-columns: 1fr;
+}
+
+.arrival img{
+    height: 26vw;
+}
+
+.card{
+    width: 60vw !important; 
+}
+
+.categories div{
+    flex-direction: column;
+    margin-bottom: 14%;
+}
+
+.categories .categories-imagenes {
+    width: 26rem;
+}
+
+.categories div button{
+    width: 18rem;
+    height: 23rem;
+    margin: 2%;
+}
+
+.categories-productos{
+ align-items: center;
+}
+
+.section-products_content section{
+    place-content: center;
+}
+
+.section-products_content{
+    background-color: var(--bs-body-bg);
+}
+
+.publicity .publicity-image{
+    height: 20vw;
+}
+
+.mainFrame img{
+    height: 100%;
+}
+
+.publicity{
+    background-color: var(--bs-body-bg);
+}
+
+.publicity .publicity-image{
+    height: 26vw;
+}
+
+.publicity div:nth-child(2){
+    width: 78vw;
+}
+
+.publicity div button{
+    width: 18vw;
+}
+
+.publicity div:nth-child(3) figure{
+    flex-direction: column;
+}
+
+.publicity div:nth-child(3){
+    width: 84%;
+}
