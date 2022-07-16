@@ -3,9 +3,12 @@
 }
 
 .categories .categories-imagenes {
-    height: 10vw;
+    height: 9.8vw;
 }
 
+.categories div button{
+    width: 8vw;
+}
 
 .publicity .publicity-image{
     height: 20vw;
@@ -19,21 +22,26 @@
     height: 7vw;
 }
 
-.categories div button{
-    width: 7vw;
-}
 
 .card{
-    width: 10vw !important; 
+    width: 14vw !important; 
 }
 
 
+.publicity .publicity-image{
+    height: 20.5vw;
+}
+
 .publicity div:nth-child(2){
-    width: 10vw;
+    width: 63vw;
 }
 
 .publicity div button{
-    width: 7vw;
+    width: 15vw;
+}
+
+.publicity div:nth-child(3) figure{
+    flex-direction: column;
 }
 
 .publicity div:nth-child(3){

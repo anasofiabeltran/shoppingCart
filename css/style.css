@@ -128,6 +128,12 @@ header img{
 
 }
 
+.opinion ,
+.newsletter {
+    display: grid;
+    place-items: center;
+}
+
 /*
 .section-products_content section:target {
     opacity: 1; Mostramos el <li> del enlace que pulsemos
@@ -142,7 +148,7 @@ header img{
 }
 
 .categories .categories-imagenes {
-    height: 13.25rem;
+    height: 9.8vw;
 }
 
 
@@ -198,6 +204,11 @@ header img{
    height: 8rem;
 }
 
+.section-products_content section{
+    place-content: center;
+}
+
+
 .publicity{
 
     display: grid;
@@ -219,7 +230,7 @@ header img{
 }
 
 .publicity .publicity-image{
-    height: 28rem;
+    height: 24.5rem;
 }
 
 .publicity div:nth-child(3){

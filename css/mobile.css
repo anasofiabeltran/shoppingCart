@@ -3,11 +3,16 @@
 }
 
 .header{
-    height: 60vw;
+    height: 26rem;
 }
 
 .header-firstPart section{
     flex-direction: column;
+}
+
+.header-secondPart form {
+    flex-direction: column;
+    gap: 15px;
 }
 
 .cartButton{
@@ -16,12 +21,16 @@
 
 .header-secondPart{
     grid-template-columns: 1fr;
-    gap: 12%;
+    gap: 22%;
 }
 
 .header-secondPart button,
 .header-secondPart .my_account{
     place-self: center;
+}
+
+.header-secondPart button{
+    width: 100%;
 }
 
 .mainFrame{
@@ -42,8 +51,10 @@
 }
 
 .card{
-    width: 60vw !important; 
+    width: 44vw !important; 
 }
+
+
 
 .categories div{
     flex-direction: column;
@@ -51,7 +62,8 @@
 }
 
 .categories .categories-imagenes {
-    width: 26rem;
+    width: 82vw;
+    margin-bottom: 40%;
 }
 
 .categories div button{
@@ -60,13 +72,12 @@
     margin: 2%;
 }
 
-.categories-productos{
+.categories-productos,
+.categories-container_imagenes{
  align-items: center;
 }
 
-.section-products_content section{
-    place-content: center;
-}
+
 
 .section-products_content{
     background-color: var(--bs-body-bg);
@@ -100,6 +111,5 @@
     flex-direction: column;
 }
 
-.publicity div:nth-child(3){
-    width: 84%;
-}
+
+
