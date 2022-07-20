@@ -6,31 +6,39 @@ let productInfomation = {
     headphones: ["../assets/img/pink-headphones-wireless-digital-device.jpg"],
 }
 
-function uploadProducts(){
-    let p = document.getElementById('modal-body');
-    p.innerHTML = '';
-    Object.entries(products).forEach(
-        ([key,value]) => {
-            if (value != 0) {
-                p.innerHTML += `
-                <div class="upload_products">
-                <h6>${key}</h6>
-                <p> cantidad: ${value} </p>
-                <img src=${productInfomation[`${key}`]}>
-                </div>
-            `
-            }
-        }
-    )
-    
-}
-
-uploadProducts();
 listOfProducts();
 
 */
 let products = {
 }
+
+
+function uploadProducts(){
+    let p = document.getElementById('modal-body');
+    p.innerHTML = '';
+    if(Object.keys(products).length == 0){
+        p.innerHTML += `
+                    carrito vacio 
+                `
+    }else {
+        Object.entries(products).forEach(
+            ([key,value]) => {
+                if (value != 0) {
+                    p.innerHTML += `
+                    <div class="upload_products">
+                    <h6>${key}</h6>
+                    <p> cantidad: ${value} </p>
+                    </div>
+                `
+                }
+            }
+        )
+    }
+    
+}
+
+
+
 
 
 function listOfProducts(){
@@ -55,10 +63,9 @@ export function add(product){
         let p = document.getElementById(`quantity_of_products_${product}`);
         p.value =  `${products[product]}`;
     }
-    console.log(products);
 
     listOfProducts();
-
+    uploadProducts();
 
 }
 
@@ -72,8 +79,10 @@ export function less(product){
         let p = document.getElementById(`quantity_of_products_${product}`);
         p.value =  `${products[product]}`;
     }
-    console.log(products);
+ 
     
     listOfProducts();
-
+    uploadProducts();
 }
+
+uploadProducts();
