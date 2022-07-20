@@ -62,8 +62,9 @@
 }
 
 .categories .categories-imagenes {
-    width: 82vw;
+    width: 79.8vw;
     margin-bottom: 40%;
+    height: 44vw;
 }
 
 .categories div button{

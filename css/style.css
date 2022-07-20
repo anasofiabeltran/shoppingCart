@@ -149,6 +149,14 @@ header img{
 
 .categories .categories-imagenes {
     height: 9.8vw;
+    border: 1px solid black;
+}
+
+.categories .categories-imagenes img{
+    object-fit: contain;
+    /* width: 100%; */
+    height: 100%;
+
 }
 
 
