@@ -12,7 +12,26 @@ listOfProducts();
 let products = {
 }
 
+document.getElementById('uploadProducts').addEventListener("click",
+()=>{
+    console.log('cargando compras');
+    document.getElementById('modal-body').innerHTML = '';
+    Object.entries(products).forEach(
+        ([key,value]) => {
+            if (value != 0) {
+                
+                document.getElementById('modal-body').innerHTML += `
+                <div class="upload_products">
+                <h6>${key}</h6>
+                <p> cantidad: ${value} </p>
+                </div>
+            `
+            }
+        }
+    )
+});
 
+/*
 function uploadProducts(){
     let p = document.getElementById('modal-body');
     p.innerHTML = '';
@@ -36,7 +55,7 @@ function uploadProducts(){
     }
     
 }
-
+*/
 
 
 
@@ -65,7 +84,7 @@ export function add(product){
     }
 
     listOfProducts();
-    uploadProducts();
+    //uploadProducts();
 
 }
 
@@ -82,7 +101,7 @@ export function less(product){
  
     
     listOfProducts();
-    uploadProducts();
+    //uploadProducts();
 }
 
-uploadProducts();
+//uploadProducts();
